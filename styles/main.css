@@ -1,0 +1,31 @@
+body {
+  background-color: #ffc95f;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.centerElement {
+  margin-top: 15%;
+}
+
+.loginBox {
+  background-color: #fffdf6;
+  border-radius: 13.5px;
+  margin: auto;
+  width: 50%;
+  border: 1px solid #fffdf6;
+  padding: 35px;
+}
+
+.title {
+  text-align: center;
+  font-size: 32pt;
+  font-weight: 600;
+  color: black;
+}
+
+.text {
+  font-size: 16pt;
+  font-weight: 400;
+  color: black;
+}
