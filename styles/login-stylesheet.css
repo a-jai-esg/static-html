@@ -1,0 +1,58 @@
+.button {
+  border-radius: 0%;
+  font-weight: 600;
+  border-color: transparent;
+  background-color: #ae431e;
+  margin-top: 15%;
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 6.5px;
+}
+
+.button:hover {
+  background-color: #ae431e;
+}
+
+.login-form {
+  background-color: #efebe0;
+  border-radius: 14.5px;
+  margin: auto;
+  width: 35%;
+  border: 1px solid #efebe0;
+  padding: 90px;
+}
+
+.header {
+  margin-bottom: 35px;
+}
+
+.content-no-margin {
+  margin-bottom: 3px;
+}
+
+.form-group-element {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  font-size: 11pt;
+  overflow: none;
+  background: transparent;
+  border: transparent;
+  border-bottom: 2px solid #333333;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  font-size: 12pt;
+  overflow: hidden;
+  font-weight: 600;
+  background: transparent;
+  border: 0.5px solid #333333;
+  margin-bottom: 35px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}

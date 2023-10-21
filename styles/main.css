@@ -4,28 +4,33 @@ body {
   overflow: hidden;
 }
 
-.centerElement {
-  margin-top: 15%;
+.centered-container {
+  margin-top: 5%;
 }
 
-.loginBox {
-  background-color: #fffdf6;
-  border-radius: 13.5px;
-  margin: auto;
-  width: 50%;
-  border: 1px solid #fffdf6;
-  padding: 35px;
-}
-
-.title {
-  text-align: center;
-  font-size: 32pt;
-  font-weight: 600;
+.content-link {
+  text-align: right;
+  font-weight: 700;
+  font-size: 10pt;
   color: black;
 }
 
-.text {
-  font-size: 16pt;
+.content-title {
+  text-align: center;
+  font-size: 23pt;
+  font-weight: 700;
+  color: black;
+}
+
+.content-subtitle {
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+}
+
+.content-text {
+  font-size: 15pt;
   font-weight: 400;
   color: black;
 }
