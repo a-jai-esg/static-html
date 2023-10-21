@@ -5,11 +5,11 @@ body {
 }
 
 .centered-container {
-  margin-top: 5%;
+  margin-top: 2.5%;
 }
 
 .content-link {
-  text-align: right;
+  text-align: center;
   font-weight: 700;
   font-size: 10pt;
   color: black;
