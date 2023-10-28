@@ -4,15 +4,15 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1366px) {
+@media (max-height: 1080px) {
   .centered-container {
-    margin-top: 3%;
+    margin-top: 5%;
   }
 }
 
-@media (max-width: 1920px) {
+@media (max-height: 768px) {
   .centered-container {
-    margin-top: 5%;
+    margin-top: 3%;
   }
 }
 

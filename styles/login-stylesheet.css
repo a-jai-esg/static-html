@@ -81,7 +81,7 @@
 }
 
 .form-control:focus {
-  font-weight: 600;
+  font-weight: 700;
   background: transparent;
   border: 0.5px solid #ae431e;
   border-bottom: 2px solid #ae431e;
