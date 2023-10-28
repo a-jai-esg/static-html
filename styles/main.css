@@ -4,8 +4,16 @@ body {
   overflow: hidden;
 }
 
-.centered-container {
-  margin-top: 3%;
+@media (max-width: 1366px) {
+  .centered-container {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 1920px) {
+  .centered-container {
+    margin-top: 5%;
+  }
 }
 
 .content-link {
