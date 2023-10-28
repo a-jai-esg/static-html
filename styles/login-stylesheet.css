@@ -19,7 +19,8 @@
 
 .content-link-right {
   display: block;
-  padding: 15px;
+  padding-right: 22.5%;
+  margin-top: 2.5%;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
@@ -82,7 +83,8 @@
 .form-control:focus {
   font-weight: 600;
   background: transparent;
-  border: 0.5px solid gray;
+  border: 0.5px solid #ae431e;
+  border-bottom: 2px solid #ae431e;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
