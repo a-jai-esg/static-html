@@ -1,7 +1,7 @@
 body {
   background-color: #efebe0;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  overflow: auto;
   color: #862b0d;
 }
 
@@ -60,29 +60,64 @@ body {
 }
 
 /* View Training Second Page */
-.container-full-pg-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
+.container-fluid {
+  padding: 3em 5em;
   height: 100vh;
-  gap: 2em;
+}
+
+.video-container {
+  width: 50%;
+  margin: 1em auto;
+  border: 3px solid #862b0d;
+  border-radius: 0.5em;
+  padding: 5px;
+  background-color: #862b0d;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 2em; */
+  width: 100%;
+}
+
+.btn-arrow {
+  outline: none;
+  margin: 0;
+  border: none;
+  color: #febe3e;
+  font-size: 40px;
+}
+.btn-arrow:hover {
+  color: #f7ad1a;
 }
 
 /* Responsive */
 
 @media (max-width: 60em) {
-  body {
-    overflow: auto;
-  }
-  .container-full {
+  .container-full-pg-1 {
     flex-direction: column;
     height: auto;
   }
+
   .description-container,
   .image-container,
   .button-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 70em) {
+  body {
+    overflow: auto;
+  }
+  .container-fluid {
+    height: auto;
+    padding: 2em;
+  }
+
+  .video-container {
     width: 100%;
   }
 }
