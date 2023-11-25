@@ -56,7 +56,8 @@
         transition: opacity 0.3s ease-in-out;
       }
 
-      .editable-field:hover .edit-icon {
+      .editable-field:hover .edit-icon,
+      .admin-description-container:hover .edit-icon {
         opacity: 1;
       }
 
@@ -64,48 +65,80 @@
       .editable-field p {
         margin-left: 30px; /* Adjust the margin as needed */
       }
+
+      .admin-description-container {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .description-header {
+        padding: inherit;
+        text-align: left;
+        margin-bottom: 0.5em;
+      }
+
+      .description-content {
+        min-width: 80%;
+        min-height: 80%;
+        text-align: justify;
+        margin-right: 30px;
+      }
     </style>
     <script
       language="javascript"
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     ></script>
-    <script>
+    <script language="javascript" type="text/javascript">
       // Function to make the element contenteditable
-      function makeEditable(elementId, placeholder) {
-        var element = document.getElementById(elementId);
+      const makeEditable = (elementId, placeholder) => {
+        const element = document.getElementById(elementId);
         element.contentEditable = true;
-        element.style.border = "1px solid #ccc";
-        element.style.padding = "5px";
-        element.style.alignItems = "center";
+        element.style.border = "1px solid #FFC95F";
+        element.style.padding = "3.5px";
+        element.style.borderRadius = "5px";
+        element.style.backgroundColor = "#D9D9D9";
+        element.style.textAlign = "justify";
         element.style.minHeight = "80%";
-        element.style.minWidth = "100%";
+        element.style.minWidth = "80%";
         element.focus();
+
         if (element.innerHTML.trim() === placeholder) {
           element.innerHTML = "";
         }
 
         // Add a click event listener to the document to check if clicked outside the editable element
-        document.addEventListener("click", function (event) {
-          var isClickInside = element.contains(event.target);
+        document.addEventListener("click", (event) => {
+          const isClickInside = element.contains(event.target);
           if (!isClickInside) {
             makeNonEditable(elementId, placeholder);
           }
         });
-      }
+      };
 
       // Function to make the element non-editable
-      function makeNonEditable(elementId, placeholder) {
-        var element = document.getElementById(elementId);
+      const makeNonEditable = (elementId, placeholder) => {
+        const element = document.getElementById(elementId);
         element.contentEditable = false;
         element.style.border = "none";
-        element.style.padding = "0";
-        element.style.minHeight = "";
-        element.style.width = "";
+        element.style.backgroundColor = "inherit";
+        //element.style.padding = "0";
+        //element.style.minHeight = "80%";
+        //element.style.width = "80%";
+
+        //element.style.border = "1px solid #FFC95F";
+        element.style.padding = "3.5px";
+        element.style.borderRadius = "5px";
+        element.style.textAlign = "justify";
+        element.style.minHeight = "80%";
+        element.style.minWidth = "80%";
+
         if (element.innerHTML.trim() === "") {
           element.innerHTML = placeholder;
         }
-      }
+      };
     </script>
   </head>
   <body>
@@ -152,21 +185,12 @@
           onclick="makeEditable('description', 'Enter Training Description')"
           onblur="makeNonEditable('description', 'Enter Training Description')"
         >
-          <span
-            class="edit-icon"
-            onclick="makeEditable('description', 'Enter Training Description')"
-          >
-            <i class="bi bi-pencil"></i>
-          </span>
-          <h4
-            style="font-weight: 700; text-align: center; margin-bottom: 0.5em"
-            contenteditable="false"
-          >
-            Description
-          </h4>
+          <div class="description-header" contenteditable="false">
+            <h3 style="font-weight: 700">Description</h3>
+          </div>
           <p
             id="description"
-            style="text-align: center"
+            class="description-content"
             contenteditable="false"
           >
             This section covers the introduction to JavaScript. You will be
