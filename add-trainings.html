@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Trainings</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="components/origami_bold_ico.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/common-forms-stylesheet.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/add-trainings-stylesheet.css"
+    />
+    <script
+      language="javascript"
+      type="text/javascript"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    ></script>
+  </head>
+  <body>
+    <!--
+      Add action here.
+    -->
+    <form>
+      <div
+        style="margin-left: 2vh; margin-right: auto"
+        class="centered-container"
+      >
+        <div>
+          <h2
+            style="
+              font-weight: 600;
+              font-size: 4vh;
+              margin-left: 20%;
+              text-align: left;
+              margin-bottom: 5vh;
+              color: #862b0d;
+            "
+          >
+            Upload Files
+          </h2>
+        </div>
+        <div class="container">
+          <div
+            class="item container-inside"
+            style="
+              background-color: #efebe0;
+              border-style: dashed;
+              border-width: 5px;
+            "
+          >
+            <h3
+              style="
+                font-weight: 700;
+                font-size: 25vh;
+                text-align: center;
+                margin-top: 8vh;
+                margin-bottom: 1vh;
+                color: #862b0d;
+              "
+            >
+              <i class="bi bi-cloud-upload"></i>
+            </h3>
+            <div class="item-inside">
+              <label for="file"> Upload Files: </label>
+              <input type="file" name="file" id="file" />
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="container-inside"
+              style="
+                border-style: none;
+                border-color: transparent;
+                background-color: #efebe0;
+                margin-bottom: 10px;
+              "
+            >
+              <div class="item-inside">
+                <div
+                  class="form-group form-group-element"
+                  style="color: #862b0d"
+                >
+                  <input
+                    type="text"
+                    style="width: 50vh; color: #862b0d"
+                    class="form-control-override"
+                    id="username"
+                    aria-describedby="training-title"
+                    placeholder="Training Title"
+                  />
+                </div>
+                <div class="form-group form-group-element">
+                  <input
+                    type="text"
+                    class="form-control-override"
+                    id="username"
+                    aria-describedby="description"
+                    placeholder="Description"
+                    style="width: 50vh; color: #862b0d"
+                  />
+                </div>
+                <div class="form-group form-group-element">
+                  <input
+                    type="text"
+                    class="form-control-override"
+                    id="username"
+                    aria-describedby="category"
+                    placeholder="Category"
+                    style="width: 50vh; color: #862b0d"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="container-inside"
+              style="background-color: #efebe0; border-color: transparent"
+            >
+              <div class="item-inside">
+                <button
+                  type="submit"
+                  style="width: 50vh; margin-left: auto; margin-right: auto"
+                  class="btn button btn-primary"
+                >
+                  Add Training
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

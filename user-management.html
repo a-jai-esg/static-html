@@ -25,7 +25,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <style></style>
+    <script language="javascript" type="text/javascript">
+      const editUser = (event) => {
+        window.location.href = "edit-user.html"; // redirect to edit-user page
+      };
+
+      const deleteUser = (event) => {
+        alert("User has been deleted."); // alert that the user has been deleted
+      };
+    </script>
   </head>
   <body>
     <div class="table-container">
@@ -40,15 +48,15 @@
         <tbody>
           <tr>
             <td>
-              <span class="material-symbols-outlined"> person </span>Angeli
-              Mhiriel Severo
+              <span class="material-symbols-outlined"> person </span>Estelle
+              Marie Pepino
             </td>
-            <td>angeli@learnest.com</td>
+            <td>alex@learnest.com</td>
             <td>
-              <button class="clickable-action">
+              <button class="clickable-action" onclick="{editUser()}">
                 <span class="material-symbols-outlined"> edit </span>
               </button>
-              <button class="clickable-action">
+              <button class="clickable-action" onclick="{deleteUser()}">
                 <span class="material-symbols-outlined"> delete </span>
               </button>
             </td>
@@ -60,10 +68,10 @@
             </td>
             <td>angeli@learnest.com</td>
             <td>
-              <button class="clickable-action">
+              <button class="clickable-action" onclick="{editUser()}">
                 <span class="material-symbols-outlined"> edit </span>
               </button>
-              <button class="clickable-action">
+              <button class="clickable-action" onclick="{deleteUser()}">
                 <span class="material-symbols-outlined"> delete </span>
               </button>
             </td>

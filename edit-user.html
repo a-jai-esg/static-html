@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Login to LearnNest</title>
+    <title>Edit User</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -30,6 +30,23 @@
       type="text/javascript"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     ></script>
+    <!--
+        This style definition will override the existing 
+        definitions for centered container.
+    -->
+    <style type="text/css">
+      @media (max-height: 768px) {
+        .centered-container {
+          margin-top: 8%;
+        }
+      }
+
+      @media (max-height: 1080px) {
+        .centered-container {
+          margin-top: 10%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="centered-container">
@@ -37,14 +54,25 @@
         <!--
           Header
         -->
-        <div class="header">
-          <img src="components/origami bold.png" class="login_logo_image" />
-          <p class="content-title content-no-margin">LearnNest</p>
-          <p class="content-subtitle">Admin Control Panel Login</p>
+        <div class="header" style="padding-top: 20px">
+          <table align="center">
+            <tr>
+              <td>
+                <img
+                  src="components/origami bold.png"
+                  class="change_password_logo_image"
+                />
+              </td>
+              <td>
+                <p class="content-title content-no-margin">LearnNest</p>
+                <p class="content-subtitle">Edit Admin Account</p>
+              </td>
+            </tr>
+          </table>
         </div>
 
         <!--
-          Username field.
+          Username.
         -->
         <div class="form-group form-group-element">
           <input
@@ -52,31 +80,42 @@
             class="form-control"
             id="username"
             aria-describedby="username"
-            placeholder="Username"
+            placeholder="Edit Username"
           />
         </div>
 
         <!--
-          Password only.
+          Fullname.
         -->
         <div class="form-group form-group-element">
           <input
-            type="password"
+            type="text"
             class="form-control"
-            id="password"
-            placeholder="Password"
+            id="fullname"
+            aria-describedby="username"
+            placeholder="Edit Fullname"
           />
-          <a href="change-password.html" class="content-link-right"
-            >Forgotten Password?</a
-          >
         </div>
 
         <!--
           Login button only.
         -->
         <div>
-          <button type="submit" class="btn button btn-primary">Login</button>
-          <p class="content-link">No account? Call support to register.</p>
+          <button
+            type="submit"
+            class="btn button btn-primary"
+            onclick="{
+                confirm('Save changes?');
+            }
+            "
+          >
+            Confirm Changes
+          </button>
+        </div>
+        <div>
+          <a href="user-management.html" class="content-link-center"
+            >Return to Admin User Management Panel</a
+          >
         </div>
       </form>
     </div>
