@@ -92,60 +92,6 @@ input[type="text"]:focus {
   color: white;
 }
 
-/* Topic View */
-
-/* Table */
-.table {
-  width: 80%;
-  border: 3px solid #ffc95f;
-  color: #862b0d;
-}
-
-.dropdown {
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.dropdown i {
-  transition: transform 0.3s ease;
-}
-
-.dropdown.open i {
-  transform: rotate(90deg);
-}
-
-.sub-topics {
-  display: none;
-}
-
-.sub-topics.show {
-  display: block;
-}
-
-.inner-row {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: disc;
-}
-
-a {
-  color: #862b0d;
-  text-decoration: none;
-}
-
-.icon-click {
-  color: #862b0d;
-  outline: none;
-  border: none;
-  margin: 0;
-  background-color: transparent;
-}
-
-.icon-click:hover,
-.dropdown:hover {
-  color: #ffc95f;
-}
-
 /* Responsive */
 
 @media (max-width: 50em) {
@@ -177,14 +123,7 @@ a {
 }
 
 @media (max-width: 80em) {
-  .table {
-    width: 100%;
-  }
   .container-full {
     padding: 3em;
-  }
-  .icons {
-    display: flex;
-    flex-direction: column;
   }
 }

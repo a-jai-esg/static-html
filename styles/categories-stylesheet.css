@@ -12,35 +12,6 @@ body {
   padding-bottom: 2.5em;
 }
 
-/* Search Bar */
-.search-container {
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  border: 3px solid #ffc95f;
-  border-radius: 5px;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
-  width: 20em;
-}
-
-.search-container input[type="text"] {
-  flex: 1;
-  width: 200px;
-  padding: 10px;
-  border: none;
-  background-color: transparent;
-}
-
-.search-container i.fa-search {
-  padding: 5px;
-  color: #862b0d;
-}
-
-.search-container input[type="text"]:focus {
-  outline: none;
-}
-
 /* Categories */
 .category-container {
   display: grid;
